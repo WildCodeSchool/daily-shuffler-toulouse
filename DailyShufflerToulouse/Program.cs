@@ -16,7 +16,8 @@ namespace DailyShufflerToulouse
             {
                 Console.WriteLine(student);
             }
-            Console.WriteLine(students);
+            Console.WriteLine(toulouseStudents);
+            
         }
 
         static String[] ShuffleStudents(String[] students)
@@ -26,7 +27,7 @@ namespace DailyShufflerToulouse
               {
                 // j = GenererEntierAleatoireEntre(0, i)
                 Random random = new Random();
-                int j = random.Next(i);
+                int j = random.Next(0, i);
                 // k = students[i]
                 string k = students[i];
                 // students[i] = students[j]
