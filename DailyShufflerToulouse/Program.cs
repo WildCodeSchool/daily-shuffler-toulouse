@@ -15,9 +15,7 @@ namespace DailyShufflerToulouse
             foreach (String student in toulouseStudents)
             {
                 Console.WriteLine(student);
-            }
-            Console.WriteLine(toulouseStudents);
-            
+            }           
         }
 
         static String[] ShuffleStudents(String[] students)
