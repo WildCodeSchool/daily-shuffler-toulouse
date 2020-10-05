@@ -16,16 +16,26 @@ namespace DailyShufflerToulouse
             {
                 Console.WriteLine(student);
             }
+            Console.WriteLine(students);
         }
 
         static String[] ShuffleStudents(String[] students)
         {
-            // Pour i allant de 0 à students.taille - 1:
+              // Pour i allant de 0 à students.taille - 1:
+              for (int i = 0; i < students.Length-1;i++)
+              {
                 // j = GenererEntierAleatoireEntre(0, i)
+                Random random = new Random();
+                int j = random.Next(i);
                 // k = students[i]
+                string k = students[i];
                 // students[i] = students[j]
+                students[i] = students[j];
                 // students[j] = k
-            return students;
+                students[j] = k;
+                
+              }
+              return students;
         }
     }
 }
