@@ -7,7 +7,7 @@ namespace DailyShufflerToulouse
         static void Main(String[] args)
         {
             String[] toulouseStudents =
-                { "ANGLADE Emilie", "BAGES Sébastien", "BRULTET Sophie", "BUI Coline",
+                { "BAGES Sébastien", "BRULTET Sophie", "BUI Coline",
                   "DELSOL Emilie", "DESNOUES Fabien", "DUMAS Maylis", "DURCY Colas", "ESPASA Coralie",
                   "GILLIOTTE Fabien", "IZARD Julien", "LY François", "MESTE Hervé",
                   "SAID OMAR Gabriel", "ZAPICO Adrien" };
