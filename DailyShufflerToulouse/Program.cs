@@ -12,23 +12,33 @@ namespace DailyShufflerToulouse
                   "GILLIOTTE Fabien", "IZARD Julien", "LY François", "MESTE Hervé",
                   "SAID OMAR Gabriel", "ZAPICO Adrien" };
             toulouseStudents = ShuffleStudents(toulouseStudents);
-            foreach (String student in toulouseStudents)
+            DisplayStudents(toulouseStudents);
+        }
+
+        static void DisplayStudents(String[] students)
+        {
+            foreach (String student in students)
             {
                 Console.WriteLine(student);
-            }           
+                Console.WriteLine("Press Enter Key to Continue");
+                //Wait Key in C# Method
+                while (Console.ReadKey().Key != ConsoleKey.Enter)
+                { }
+            }
+
         }
 
         static String[] ShuffleStudents(String[] students)
         {
-              for (int i = 0; i < students.Length-1;i++)
-              {
+            for (int i = 0; i < students.Length - 1; i++)
+            {
                 Random random = new Random();
                 int j = random.Next(0, i);
                 string k = students[i];
                 students[i] = students[j];
                 students[j] = k;
-              }
-              return students;
+            }
+            return students;
         }
     }
 }
