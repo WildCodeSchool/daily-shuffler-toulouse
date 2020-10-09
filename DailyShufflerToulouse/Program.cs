@@ -16,8 +16,9 @@ namespace DailyShufflerToulouse
         }
 
         static void DisplayStudents(String[] students)
+        // Method to display 1 student and then waits for a press Key to continue
         {
-            foreach (String student in students)
+            foreach (String student in toulouseStudents)
             {
                 Console.WriteLine(student);
                 Console.WriteLine("Press Enter Key to Continue");
