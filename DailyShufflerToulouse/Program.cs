@@ -8,7 +8,7 @@ namespace DailyShufflerToulouse
         {
             String[] toulouseStudents =
                 { "BAGES Sébastien", "BRULTET Sophie", "BUI Coline",
-                  "DELSOL Emilie", "DESNOUES Fabien", "DUMAS Maylis", "DURCY Colas", "ESPASA Coralie",
+                  "DELSOL Emilie", "DESNOUES Fabien", "DUMAS Maïlys", "DURCY Colas", "ESPASA Coralie",
                   "GILLIOTTE Fabien", "IZARD Julien", "LY François", "MESTE Hervé",
                   "SAID OMAR Gabriel", "ZAPICO Adrien" };
             toulouseStudents = ShuffleStudents(toulouseStudents);
@@ -16,17 +16,15 @@ namespace DailyShufflerToulouse
         }
 
         static void DisplayStudents(String[] students)
-        // Method to display 1 student and then waits for a press Key to continue
         {
-            foreach (String student in toulouseStudents)
+            foreach (String student in students)
             {
                 Console.WriteLine(student);
                 Console.WriteLine("Press Enter Key to Continue");
-                //Wait Key in C# Method
-                while (Console.ReadKey().Key != ConsoleKey.Enter)
-                { }
-            }
 
+                while (Console.ReadKey().Key != ConsoleKey.Enter)
+                { /* Wait a press on "Enter" key */ }
+            }
         }
 
         static String[] ShuffleStudents(String[] students)
