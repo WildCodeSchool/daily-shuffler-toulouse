@@ -6,11 +6,7 @@ namespace DailyShufflerToulouse
     {
         static void Main(String[] args)
         {
-            String[] toulouseStudents =
-                { "BAGES Sébastien", "BRULTET Sophie", "BUI Coline",
-                  "DELSOL Emilie", "DESNOUES Fabien", "DUMAS Maïlys", "DURCY Colas", "ESPASA Coralie",
-                  "GILLIOTTE Fabien", "IZARD Julien", "LY François", "MESTE Hervé",
-                  "SAID OMAR Gabriel", "ZAPICO Adrien" };
+            String[] toulouseStudents = System.IO.File.ReadAllLines(@".\Students.txt"); // IMPORTANT ! : Please note one name per line
             toulouseStudents = ShuffleStudents(toulouseStudents);
             DisplayStudents(toulouseStudents);
         }
