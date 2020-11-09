@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace DailyShufflerToulouse
 {
@@ -6,12 +8,8 @@ namespace DailyShufflerToulouse
     {
         static void Main(String[] args)
         {
-            String[] toulouseStudents =
-                { "BAGES Sébastien", "BRULTET Sophie", "BUI Coline",
-                  "DELSOL Emilie", "DESNOUES Fabien", "DUMAS Maïlys", "DURCY Colas", "ESPASA Coralie",
-                  "GILLIOTTE Fabien", "IZARD Julien", "LY François", "MESTE Hervé",
-                  "SAID OMAR Gabriel", "ZAPICO Adrien" };
-            toulouseStudents = ShuffleStudents(toulouseStudents);
+            string[] listOfTheStudents = AcquisitionOfTheListOfStudents();
+            string[] toulouseStudents = ShuffleStudents(listOfTheStudents);
             DisplayStudents(toulouseStudents);
         }
 
@@ -38,6 +36,31 @@ namespace DailyShufflerToulouse
                 students[j] = k;
             }
             return students;
+        }
+
+        private static string[] AcquisitionOfTheListOfStudents()
+        {
+            string fileOfTheListOfTheStudents = @"./Students.txt";
+            List<String> listOfStudents = new List<string>();
+
+            if (!File.Exists(fileOfTheListOfTheStudents))
+            {
+                Console.WriteLine("Error : The file Student.txt doesn't exist !");
+            }
+
+            using (StreamReader ReadingOfTheFile = new StreamReader(fileOfTheListOfTheStudents))
+            {
+
+                while (ReadingOfTheFile.Peek() > -1)
+                {
+                    string lineRead = ReadingOfTheFile.ReadLine();
+                    listOfStudents.Add(lineRead);
+                }
+
+                String[] listofStudentsToArray = listOfStudents.ToArray();
+
+                return listofStudentsToArray;
+            }
         }
     }
 }
