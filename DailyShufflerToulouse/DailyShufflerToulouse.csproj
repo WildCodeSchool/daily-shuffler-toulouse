@@ -7,7 +7,14 @@
 
   <ItemGroup>
     <None Remove="DailyShufflerSchema.xsd" />
+    <None Remove="Students.txt" />
     <None Remove="Students.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Students.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
