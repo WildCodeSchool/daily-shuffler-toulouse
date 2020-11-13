@@ -3,7 +3,7 @@
 namespace DailyShufflerToulouse
 {
     class Program
-    {
+    {   
         static void Main(String[] args)
         {
             FlatFileStudentReader reader = new FlatFileStudentReader { FilePath = @".\Students.txt" };

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ds="DailyShufflerSchema"
+  xs:noNamespaceSchemaLocation="DailyShufflerSchema.xsd">
+
+  <ds:promotion name="Q#">
+    
+    <ds:instructor photo-url="https://cdn.arstechnica.net/wp-content/uploads/2013/02/linus-eff-you-640x363.png">
+      <ds:firstname>Corentin</ds:firstname>
+      <ds:lastname>Prevost</ds:lastname>
+      <ds:citation>Less code equals less bugs</ds:citation>
+    </ds:instructor>
+
+    <ds:student>
+      <ds:firstname>Sébastien</ds:firstname>
+      <ds:lastname>Bages</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Sophie</ds:firstname>
+      <ds:lastname>Brultet</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Coline</ds:firstname>
+      <ds:lastname>Bui</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Emilie</ds:firstname>
+      <ds:lastname>Delsol</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Fabien</ds:firstname>
+      <ds:lastname>Desnoues</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Colas</ds:firstname>
+      <ds:lastname>Durcy</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Coralie</ds:firstname>
+      <ds:lastname>Espasa</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Fabien</ds:firstname>
+      <ds:lastname>Gilliotte</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Julien</ds:firstname>
+      <ds:lastname>Izard</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>François</ds:firstname>
+      <ds:lastname>Ly</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Hervé</ds:firstname>
+      <ds:lastname>Meste</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Gabriel</ds:firstname>
+      <ds:lastname>Said Omar</ds:lastname>
+    </ds:student>
+    
+    <ds:student>
+      <ds:firstname>Adrien</ds:firstname>
+      <ds:lastname>Zapico</ds:lastname>
+    </ds:student>
+    
+  </ds:promotion>
+  
+</xs:schema>

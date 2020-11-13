@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ds="DailyShufflerSchema" targetNamespace="DailyShufflerSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="promotion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="instructor" type="ds:Person" minOccurs="1" maxOccurs="1" />
+        <xs:element name="student" type="ds:Person" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element name="firstname" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="lastname" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="citation" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="photo-url" type="xs:string" use="optional" />
+  </xs:complexType>
+</xs:schema>
